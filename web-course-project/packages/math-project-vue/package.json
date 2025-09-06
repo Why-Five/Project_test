@@ -1,0 +1,25 @@
+{
+  "name": "math-project-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@w4ng3/tools": "workspace:*",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.381",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "catalog:",
+    "unocss": "^66.5.0",
+    "unocss-preset-theme": "^0.14.1",
+    "vite": "catalog:",
+    "vue-tsc": "^3.0.5"
+  }
+}

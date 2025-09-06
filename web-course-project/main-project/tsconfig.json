@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+        "allowJs": true, // 指定源目录的 JavaScript 文件是否原样拷贝到编译后的目录
+    "declaration": true, // 生成相应的 '.d.ts' 文件
+    "declarationDir": "./types", // 为生成的声明文件指定输出目录
+
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["./src/**/*"]
+}

@@ -1,0 +1,31 @@
+# 依赖目录
+node_modules/
+
+# 构建输出目录
+dist/
+build/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志文件
+*.log
+npm-debug.log*
+
+# 环境变量文件
+.env
+.env.local
+
+# pnpm 锁文件（可选，根据团队约定）
+pnpm-lock.yaml
+
+# 其他
+coverage/
+*.tmp
