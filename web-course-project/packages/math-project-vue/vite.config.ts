@@ -1,25 +1,21 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
+import path from 'node:path'
 
 
-// https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [vue()],
-// })
-export default defineConfig({
-  plugins: [vue(),UnoCSS()],
+export default defineConfig({  plugins: [vue(), UnoCSS()],
   resolve: {
-    alias: { "@": "/src" },
+    alias: { '@': path.resolve(__dirname, 'src') },
   },
   server: {
     open: true,
     proxy: {
-      "/api": {
-        target: "https://www.zhihu.com",
+      '/api': {
+        target: 'https://www.zhihu.com',
         changeOrigin: true,
         // rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
-});
+})

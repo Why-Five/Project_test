@@ -1,0 +1,9 @@
+button:
+  about: About
+  back: Back
+intro:
+  desc: There are too many failed female leads!
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  whats-your-name: What's your name?
+not-found: Not found

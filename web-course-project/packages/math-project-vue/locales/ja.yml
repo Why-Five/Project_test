@@ -1,0 +1,9 @@
+button:
+  about: これは？
+  back: 戻る
+intro:
+  desc: 負けヒロインが多すぎる！
+  dynamic-route: 動的ルートのデモ
+  hi: こんにちは、{name}!
+  whats-your-name: 君の名は。
+not-found: 見つかりませんでした

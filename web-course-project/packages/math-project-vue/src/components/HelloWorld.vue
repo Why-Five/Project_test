@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { inject, ref ,computed } from 'vue'
 import { useMock } from "../composables/useMock";
 import { onMounted } from "vue";
+import { $i18n } from "../plugins/i18n";
 
 defineProps<{ msg: string }>()
 
@@ -10,10 +11,20 @@ const count = ref(0)
 // 添加的代码
 const mock = useMock();
 const list = ref();
+const i18n = inject($i18n)!;
 
 onMounted(() => {
   list.value = mock.getSongs();
 });
+
+// 添加语言切换
+type Local = "zh" | "en";
+const local = ref<Local>("zh");
+const $t = computed(() => i18n[local.value]);
+
+const setLocal = (type: Local) => {
+  local.value = type;
+};
 </script>
 
 <template>
@@ -62,6 +73,13 @@ onMounted(() => {
       </div>
     </div>
   </div>
+
+   <nav mt-10 flex justify-center gap-2>
+    <button h-10 btn @click="setLocal('zh')">中文</button>
+    <button h-10 btn @click="setLocal('en')">English</button>
+  </nav>
+
+  <h1>{{ $t.hello }} {{ $t.MilkyWay }}</h1>
 </template>
 
 <style scoped>

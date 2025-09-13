@@ -3,6 +3,8 @@
     <nav class="nav">
       <router-link to="/" class="nav-link">知乎热榜</router-link>
       <router-link to="/hello" class="nav-link">Hello World</router-link>
+      <router-link to="/test" class="nav-link">Test</router-link>
+
     </nav>
     <router-view></router-view>
   </div>
