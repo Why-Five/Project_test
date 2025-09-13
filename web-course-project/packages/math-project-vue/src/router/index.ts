@@ -3,6 +3,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import ZhihuHotList from '@/components/ZhihuHotList.vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 import Test from '@/components/Test.vue'
+import ApiTest from '@/components/ApiTest.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -19,6 +20,11 @@ const routes: RouteRecordRaw[] = [
     path: '/test',
     name: 'Test',
     component: Test
+  },
+   {
+    path: '/apiTest',
+    name: 'apiTest',
+    component: ApiTest
   }
 ]
 
