@@ -16,10 +16,13 @@
   "dependencies": {
     "@vueuse/core": "^13.9.0",
     "@w4ng3/tools": "workspace:*",
-    "vue": "^3.5.18"
+    "mockjs": "^1.1.0",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.381",
+    "@types/mockjs": "^1.0.10",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
     "@vitejs/plugin-vue": "^6.0.1",

@@ -1,0 +1,9 @@
+{
+    "workbench.settings.useSplitJSON": true
+},
+{
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
+}
