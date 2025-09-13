@@ -77,3 +77,26 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* 默认亮色模式的过渡顺序 */
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 114514;
+}
+
+/* 暗色模式的过渡顺序（颠倒） */
+.dark::view-transition-old(root) {
+  z-index: 114514;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
