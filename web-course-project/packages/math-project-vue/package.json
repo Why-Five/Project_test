@@ -8,7 +8,11 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.ts,.vue",
-    "lint:fix": "eslint . --ext .js,.ts,.vue --fix"
+    "lint:fix": "eslint . --ext .js,.ts,.vue --fix",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "test:unit": "vitest --run",
+    "test:watch": "vitest --watch"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint"
@@ -27,22 +31,26 @@
     "@types/mockjs": "^1.0.10",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
+    "@unocss/eslint-plugin": "^0.62.3",
     "@vitejs/plugin-vue": "^6.0.1",
+    "@vitejs/plugin-vue-jsx": "^5.1.1",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.6.0",
+    "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.35.0",
     "eslint-plugin-format": "^0.1.2",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-vue": "^10.4.0",
     "globals": "^16.3.0",
+    "jsdom": "^27.0.0",
     "prettier": "^3.6.2",
     "simple-git-hooks": "^2.13.1",
     "typescript": "catalog:",
     "unocss": "^66.5.0",
-    "@unocss/eslint-plugin": "^0.62.3",
     "unocss-preset-theme": "^0.14.1",
     "vite": "catalog:",
+    "vitest": "^3.2.4",
     "vue-i18n": "^11.1.12",
     "vue-tsc": "^3.0.5"
   }

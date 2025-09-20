@@ -38,7 +38,6 @@ onMounted(async () => {
             <div class="song-singer">{{ item.singer }}</div>
             <div class="song-date">{{ item.date }}</div>
           </div>
-          </img>
         </div>
       </div>
     </div>
